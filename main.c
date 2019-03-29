@@ -3,20 +3,23 @@
 
 int main()
 {
-    int x,i,fact=1;
-    printf("Enter a number to calculate the factorial\n\n");
+    int x, i;
+    long long fact=1;
+
+    printf("Enter a number to calculate the factorial: ");
     scanf("%d",&x);
-    printf("\n");
+    printf("\n\n%d! = ", x);
 
     for(i=1; i<=x; i++)
     {
         fact*=i;
-        printf("%d ",i);
+        printf("%d ", i);
+
         if(i<x)
         {
-            printf("* ");
+            printf("x ");
         }
     }
-    printf("\n\nFactorial : %d\n",fact);
+
     return 0;
 }
